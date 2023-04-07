@@ -1,0 +1,47 @@
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #a892ee;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+label{
+    font-size: 18px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 10px;
+  justify-content: center;
+}
+
+input {
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  margin-right: 5px;
+  width: 100%;
+  font-size: 15px;
+font-weight: bold;
+}
+
+input::placeholder{
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+
+.addbtn {
+  display: flex;
+  justify-content: right;
+  width: 85%;
+}

@@ -1,0 +1,100 @@
+.List{
+    background-color: #4b4a4c;
+    margin-top: 10px;
+    width: 98%;
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+    justify-content:space-between;  
+}
+
+.date{
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    width: 70px;
+}
+
+.Item{
+  color:  #f3f4f3;
+  font-size: 20px;
+  font-weight:bold;
+  margin: 25px;
+}
+
+.action{
+    display: flex;
+    flex-direction: column;
+}
+
+.action-btn{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.btn-group{
+    border: none;
+}
+
+.price{
+    /* border:1px solid #c5cac4; */
+    outline:2px solid #c5cac4;
+    border-radius: 8px;
+    padding: 5px;
+    color: #c5cac4;
+    background-color: #400857;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    background-color: #a892ee;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 12px;
+  }
+  
+  label{
+      font-size: 18px;
+  }
+  
+  .text {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 10px;
+    justify-content: center;
+  }
+  
+  input {
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    margin-right: 5px;
+    width: 100%;
+    font-size: 15px;
+  font-weight: bold;
+  }
+  
+  input::placeholder{
+      text-transform: capitalize;
+      font-weight: bolder;
+  }
+  
+  .addbtn {
+    display: flex;
+    justify-content: right;
+    width: 85%;
+  }
+  
