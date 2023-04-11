@@ -10,7 +10,8 @@ import { reducer } from "./Reducer/reducer";
 export const ExpenseContext = createContext();
 
 const initialState={
-  exparr:expenseData
+  exparr:expenseData,
+  filterArr:[]
 }
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
   
 
   const [state,dispatch]=useReducer(reducer,initialState);
+  console.log("state", state)
 
   
   

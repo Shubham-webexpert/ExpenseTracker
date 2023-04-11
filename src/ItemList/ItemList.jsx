@@ -6,7 +6,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import ExpDate from "../Date/ExpDate";
 import { ExpenseContext } from "../App";
 import Box from "@mui/material/Box";
-import Modal from "@mui/material/Modal";
+  import Modal from "@mui/material/Modal";
 
 const style = {
   position: "absolute",
@@ -20,7 +20,8 @@ const style = {
   p: 4,
 };
 
-const ItemList = () => {
+const ItemList = ({allData}) => {
+  // debugger
   const [id,setId]=useState("");
   const [expTitle,setExpTitle]=useState("");
 const [expAmount,setExpAmount]=useState("");
@@ -63,7 +64,7 @@ const [expDate,setExpDate]=useState("");
   
   return (
     <div>
-      {exparr.map((ele) => {
+      {allData.length ? allData?.map((ele) => {
       
         return (
           <div className="List" key={ele.id}>
@@ -164,7 +165,7 @@ const [expDate,setExpDate]=useState("");
             </div>
           </div>
         );
-      })}
+      }) : "No Data Found"}
     </div>
   );
 };

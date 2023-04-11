@@ -7,14 +7,18 @@ export const reducer = (state, action) => {
       };
 
     case "SEARCH_QUERY":
-      return {
-        ...state,
-        exparr: state.exparr.filter((curElem) => {
-          let date = new Date(curElem.expense_date).getFullYear();
-          return state.exparr.includes(date!==action.payload);
-        }),
+    
+        const filterArray= state.exparr.filter((curElem) => {
+          let year = new Date(curElem.expense_date).getFullYear();
+          return  year===action.payload
+        })
 
-    };
+        return {...state,
+          filterArr:[...filterArray]
+        }
+
+
+    
 
     // case "SEARCH_QUERY":
     //   const year = action.payload;

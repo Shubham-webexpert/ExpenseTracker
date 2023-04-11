@@ -18,7 +18,7 @@ const [expDate,setExpDate]=useState("");
     Navigate('/');
     const ids = uuid();
     let uniqueId = ids.slice(0, 8);
-    expenseData.push({id:uniqueId,expense_title:expTitle,expense_amount:expAmount,expense_date:expDate});
+    expenseData.push({id:uniqueId,expense_title:expTitle,expense_amount:expAmount,expense_date:expDate, expense_year:new Date(expDate).getFullYear()});
     // console.log(expenseData);
 
   }
